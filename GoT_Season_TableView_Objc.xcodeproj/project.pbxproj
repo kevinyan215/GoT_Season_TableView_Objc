@@ -13,6 +13,10 @@
 		5281FCBE20804F1900D74EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5281FCBD20804F1900D74EA7 /* Assets.xcassets */; };
 		5281FCC120804F1900D74EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5281FCBF20804F1900D74EA7 /* LaunchScreen.storyboard */; };
 		5281FCC420804F1900D74EA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281FCC320804F1900D74EA7 /* main.m */; };
+		5281FCCB2081180C00D74EA7 /* MyMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281FCCA2081180C00D74EA7 /* MyMainModel.m */; };
+		5281FCCD2081182200D74EA7 /* Season.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281FCCC2081182200D74EA7 /* Season.m */; };
+		5281FCD320813EC800D74EA7 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281FCD220813EC800D74EA7 /* NetworkManager.m */; };
+		5281FCD52081417C00D74EA7 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5281FCD42081417C00D74EA7 /* Parser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		5281FCC020804F1900D74EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5281FCC220804F1900D74EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5281FCC320804F1900D74EA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5281FCCA2081180C00D74EA7 /* MyMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMainModel.m; sourceTree = "<group>"; };
+		5281FCCC2081182200D74EA7 /* Season.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Season.m; sourceTree = "<group>"; };
+		5281FCCE2081182900D74EA7 /* Season.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Season.h; sourceTree = "<group>"; };
+		5281FCCF2081183300D74EA7 /* MyMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMainModel.h; sourceTree = "<group>"; };
+		5281FCD120813EBB00D74EA7 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		5281FCD220813EC800D74EA7 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		5281FCD42081417C00D74EA7 /* Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		5281FCD62081418100D74EA7 /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,9 @@
 				5281FCB520804F1900D74EA7 /* AppDelegate.m */,
 				5281FCB720804F1900D74EA7 /* ViewController.h */,
 				5281FCB820804F1900D74EA7 /* ViewController.m */,
+				5281FCD120813EBB00D74EA7 /* NetworkManager.h */,
+				5281FCD220813EC800D74EA7 /* NetworkManager.m */,
+				5281FCD02081183900D74EA7 /* Model */,
 				5281FCBA20804F1900D74EA7 /* Main.storyboard */,
 				5281FCBD20804F1900D74EA7 /* Assets.xcassets */,
 				5281FCBF20804F1900D74EA7 /* LaunchScreen.storyboard */,
@@ -69,6 +84,19 @@
 				5281FCC320804F1900D74EA7 /* main.m */,
 			);
 			path = GoT_Season_TableView_Objc;
+			sourceTree = "<group>";
+		};
+		5281FCD02081183900D74EA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5281FCD62081418100D74EA7 /* Parser.h */,
+				5281FCD42081417C00D74EA7 /* Parser.m */,
+				5281FCCF2081183300D74EA7 /* MyMainModel.h */,
+				5281FCCA2081180C00D74EA7 /* MyMainModel.m */,
+				5281FCCE2081182900D74EA7 /* Season.h */,
+				5281FCCC2081182200D74EA7 /* Season.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5281FCCB2081180C00D74EA7 /* MyMainModel.m in Sources */,
 				5281FCB920804F1900D74EA7 /* ViewController.m in Sources */,
+				5281FCCD2081182200D74EA7 /* Season.m in Sources */,
 				5281FCC420804F1900D74EA7 /* main.m in Sources */,
+				5281FCD320813EC800D74EA7 /* NetworkManager.m in Sources */,
+				5281FCD52081417C00D74EA7 /* Parser.m in Sources */,
 				5281FCB620804F1900D74EA7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
